@@ -28,4 +28,25 @@ public class HeapSort implements SortTester {
             max = left;
         } else {
             max = i;
+
+        }
+        if (right <= size && arr[right] > arr[max]) {
+            max = right;
+        }
+        if (max != i) {
+            intercambiar(arr, i, max);
+            heapify(arr, max, size);
+        }
+    }
+    public static void armarheap(int[] arr) {
+        for (int i = (arr.length - 1) / 2; i >= 0; i--) {
+            heapify(arr, i, arr.length - 1);
+        }
+    }
+    public static void intercambiar(int[] arr, int i, int j) {
+        int t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+}
    
