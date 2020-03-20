@@ -20,4 +20,12 @@ public class HeapSort implements SortTester {
         }
         return arr;
     }
+    public static void heapify(int[] arr, int i, int size) {
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+        int max;
+        if (left <= size && arr[left] > arr[i]) {
+            max = left;
+        } else {
+            max = i;
    
