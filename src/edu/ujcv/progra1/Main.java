@@ -17,8 +17,8 @@ public class Main {
         BubleSort b =new BubleSort();
         array = b.bubleSort(array);
 
-        ShuffleSort s = new ShuffleSort();
-        array = s.shuffleSort(array);
+        //ShuffleSort s = new ShuffleSort();
+        //array = s.shuffleSort(array);
 
         MergeSort m = new MergeSort();
         array = m.mergeSort(array);
