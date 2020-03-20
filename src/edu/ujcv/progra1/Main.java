@@ -17,8 +17,8 @@ public class Main {
         BubleSort b =new BubleSort();
         array = b.bubleSort(array);
 
-        ShuffleSort s = new ShuffleSort();
-        array = s.shuffleSort(array);
+        //ShuffleSort s = new ShuffleSort();
+        //array = s.shuffleSort(array);
 
         MergeSort m = new MergeSort();
         array = m.mergeSort(array);
@@ -35,7 +35,7 @@ public class Main {
 
 
         System.out.println("\n\nBubleSort tarda "+ b.sort(array)+ " milisegundos");
-        System.out.println("\n\nShuffleSort tarda "+ s.sort(array)+ " milisegundos");
+        //System.out.println("\n\nShuffleSort tarda "+ s.sort(array)+ " milisegundos");
         System.out.println("\n\nMergeSort tarda "+ m.sort(array)+ " milisegundos");
         System.out.println("\n\nQuickSort tarda "+ q.sort(array)+ " milisegundos");
         System.out.println("\n\nHeapSort tarda "+ h.sort(array)+ " milisegundos");
