@@ -1,29 +1,23 @@
 package edu.ujcv.progra1;
 
-import java.util.PriorityQueue;
-
 public class HeapSort implements SortTester {
+
     @Override
     public long sort(int[] array) {
-        long start = System.currentTimeMillis();
+        long start = System.nanoTime();
         heapSort(array);
-
-        long end = System.currentTimeMillis();
-
+        long end = System.nanoTime();
         return end - start;
     }
+    public static int[] heapSort(int[] arr) {
 
-    public static int[] heapSort(int[] array) {
-
-        // cambiar priority queue por su propia implementacion!!
-        PriorityQueue <Integer> queue = new PriorityQueue<>();
-        for (Integer i: array) {
-            queue.add(i);
+        armarheap(arr);
+        int sizeOfHeap = arr.length - 1;
+        for (int i = sizeOfHeap; i > 0; i--) {
+            intercambiar(arr, 0, i);
+            sizeOfHeap = sizeOfHeap - 1;
+            heapify(arr, 0, sizeOfHeap);
         }
-        for (int i = 0; i < array.length; i++) {
-            array[i] = queue.remove();
-        }
-        return array;
+        return arr;
     }
-
-}
+   
