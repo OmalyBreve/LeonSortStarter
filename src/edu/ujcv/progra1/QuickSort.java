@@ -3,7 +3,7 @@ package edu.ujcv.progra1;
 import java.util.ArrayList;
 
 public class QuickSort implements SortTester{
-    @Override
+
     public long sort(int[] array) {
         long start = System.nanoTime();
         quicksort1(array);

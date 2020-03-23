@@ -2,7 +2,7 @@
 
 public class MergeSort implements SortTester{
 
-    @Override
+
     public long sort(int[] array) {
         long start = System.nanoTime();
         mergeSort(array);
