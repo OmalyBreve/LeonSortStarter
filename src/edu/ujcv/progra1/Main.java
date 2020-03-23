@@ -11,7 +11,7 @@ public class Main {
 
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = Math.abs(random.nextInt(10000000));
+            array[i] = Math.abs(random.nextInt(10000));
         }
 
         BubleSort b =new BubleSort();
