@@ -20,17 +20,17 @@ public class prom {
                 arr5[i] = Math.abs(random.nextInt(10000));
             }
             BubleSort b = new BubleSort();
-            ShuffleSort s = new ShuffleSort();
+            //ShuffleSort s = new ShuffleSort();
             MergeSort m = new MergeSort();
-            QuickSort it = new QuickSort();
+            QuickSort q = new QuickSort();
             HeapSort h = new HeapSort();
 
 
-            long a1 = it.sort(arr1);
-            long a2 = it.sort(arr2);
-            long a3 = it.sort(arr3);
-            long a4 = it.sort(arr4);
-            long a5 = it.sort(arr5);
+            long a1 = q.sort(arr1);
+            long a2 = q.sort(arr2);
+            long a3 = q.sort(arr3);
+            long a4 = q.sort(arr4);
+            long a5 = q.sort(arr5);
             double promedio1 = a1 + a2 + a3 + a4 + a5;
             System.out.println(("BIENVENIDO, AQUI CALCULAREMOS EL PROMEDIO DE LOS 4 ALGORITMOS, EL SHUFFLESORT NO POR INEFICIENTE"));
             System.out.println("\nEl Promedio del QuickSort es de: " + (promedio1 / 5 + " Milisegundoos"));

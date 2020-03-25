@@ -4,9 +4,9 @@ public class HeapSort implements SortTester {
 
 
     public long sort(int[] array) {
-        long start = System.nanoTime();
+        long start = System.currentTimeMillis();
         heapSort(array);
-        long end = System.nanoTime();
+        long end = System.currentTimeMillis();
         return end - start;
     }
     public static int[] heapSort(int[] arr) {
@@ -49,4 +49,3 @@ public class HeapSort implements SortTester {
         arr[j] = t;
     }
 }
-   
